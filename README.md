@@ -1,7 +1,10 @@
 ##Crea un nuevo proyecto de Laravel 7 llamado "actividad7".
 
-1. Crea un nuevo proyecto de Laravel 7 llamado "actividad7":
-Abre tu terminal y ejecuta el siguiente comando: composer create-project --prefer-dist laravel/laravel actividad7 "7.*"
+#1. Crea un nuevo proyecto de Laravel 7 llamado "actividad7":
+Abre tu terminal y ejecuta el siguiente comando:
+composer create-project --prefer-dist laravel/laravel actividad7
+
+2.
 
 
 

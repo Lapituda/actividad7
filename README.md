@@ -32,7 +32,28 @@ Schema::create('usuarios', function (Blueprint $table) {
     $table->timestamps();
 });
 
+## 8.Crea tus relaciones en los modelos correspondientes:
 
+Abre los modelos ubicados en app/Models y define las relaciones necesarias. Por ejemplo:
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Usuario extends Model
+{
+    // Ejemplo de relación con otro modelo
+    public function roles()
+    {
+        return $this->hasMany(Rol::class);
+    }
+}
+
+## 9. Por ultimo Ejecuta tus migraciones:
+php artisan migrate
+
+
+## DIAGRAMA ER 
+![Imagen de WhatsApp 2024-03-10 a las 17 09 48_d1f474f8](https://github.com/Lapituda/actividad7/assets/102392241/d2cb9920-2d11-466f-93fe-face20cc34af)
 
 
 

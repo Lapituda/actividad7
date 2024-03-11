@@ -56,6 +56,9 @@ php artisan migrate
 ![Imagen de WhatsApp 2024-03-10 a las 17 09 48_d1f474f8](https://github.com/Lapituda/actividad7/assets/102392241/d2cb9920-2d11-466f-93fe-face20cc34af)
 
 
+# TAREA 6
+
+Descripción del Proyecto: [Descripción breve del proyecto]
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 

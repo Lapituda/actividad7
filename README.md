@@ -1,3 +1,62 @@
+## 1.Crea un nuevo proyecto de Laravel 7 llamado "actividad7".
+Abre tu terminal y ejecuta el siguiente comando ==
+composer create-project --prefer-dist laravel/laravel actividad7
+
+## 2.Crea el proyecto Git y el repositorio en GitHub:
+Primero, navega al directorio de tu proyecto == cd actividad7
+
+## 3.Luego, inicializa un repositorio Git e incluye todos los archivos
+git init,
+"git add .",
+git commit -m "Inicializar repositorio".
+
+## 4.Después, ve a GitHub y crea un nuevo repositorio. Luego, sigue las instrucciones para agregar tu repositorio remoto a tu repositorio local:
+git remote add origin <url_del_repositorio_github>
+git branch -M main
+git push -u origin main
+
+## 5.Usando la consola Artisan, crea modelos, controladores y migraciones:
+php artisan make:model Usuario -m
+
+## 6.Controlador:
+php artisan make:controller UsuarioController --resource
+
+## 7.Define los atributos, claves primarias y claves externas en los archivos de migración:
+
+Abre el archivo de migración generado en database/migrations y define los atributos y restricciones necesarios. Por ejemplo:
+Schema::create('usuarios', function (Blueprint $table) {
+    $table->id();
+    $table->string('nombre');
+    $table->string('email')->unique();
+    // Añadir otras columnas según sea necesario
+    $table->timestamps();
+});
+
+## 8.Crea tus relaciones en los modelos correspondientes:
+
+Abre los modelos ubicados en app/Models y define las relaciones necesarias. Por ejemplo:
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Usuario extends Model
+{
+    // Ejemplo de relación con otro modelo
+    public function roles()
+    {
+        return $this->hasMany(Rol::class);
+    }
+}
+
+## 9. Por ultimo Ejecuta tus migraciones:
+php artisan migrate
+
+
+## DIAGRAMA ER 
+![Imagen de WhatsApp 2024-03-10 a las 17 09 48_d1f474f8](https://github.com/Lapituda/actividad7/assets/102392241/d2cb9920-2d11-466f-93fe-face20cc34af)
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

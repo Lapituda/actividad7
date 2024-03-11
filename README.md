@@ -2,20 +2,35 @@
 Abre tu terminal y ejecuta el siguiente comando ==
 composer create-project --prefer-dist laravel/laravel actividad7
 
-2.
+## 2.Crea el proyecto Git y el repositorio en GitHub:
+Primero, navega al directorio de tu proyecto == cd actividad7
 
+## 3.Luego, inicializa un repositorio Git e incluye todos los archivos
+git init,
+"git add .",
+git commit -m "Inicializar repositorio".
 
+## 4.Después, ve a GitHub y crea un nuevo repositorio. Luego, sigue las instrucciones para agregar tu repositorio remoto a tu repositorio local:
+git remote add origin <url_del_repositorio_github>
+git branch -M main
+git push -u origin main
 
+## 5.Usando la consola Artisan, crea modelos, controladores y migraciones:
+php artisan make:model Usuario -m
 
+## 6.Controlador:
+php artisan make:controller UsuarioController --resource
 
+## 7.Define los atributos, claves primarias y claves externas en los archivos de migración:
 
-
-
-
-
-
-
-
+Abre el archivo de migración generado en database/migrations y define los atributos y restricciones necesarios. Por ejemplo:
+Schema::create('usuarios', function (Blueprint $table) {
+    $table->id();
+    $table->string('nombre');
+    $table->string('email')->unique();
+    // Añadir otras columnas según sea necesario
+    $table->timestamps();
+});
 
 
 

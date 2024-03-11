@@ -51,9 +51,8 @@ class Usuario extends Model
 ## 9. Por ultimo Ejecuta tus migraciones:
 php artisan migrate
 
-## Administracion de Cursos para alumnos y maestros
-En este proyecto lo que buscamos hacer fue seccionar a los alumnos y maestros en sus diferentes cusos asi como sus grupos, teniendo a los profesores y alumnos, a los profesores se les asignaron sus respectivos cursos con sus grupos y alos estudiantes los cursos del semestre con su grupo y el kit de robotica para cada alumno.
-
+## Plataforma educativa para robótica    
+Esta plataforma educativa tiene como objetivo proporcionar a estudiantes y docentes una herramienta completa para el aprendizaje y la enseñanza de la robótica. Ofrece una variedad de cursos, recursos y herramientas para que los usuarios puedan desarrollar sus habilidades en esta área.
 ## DIAGRAMA ER 
 ![Imagen de WhatsApp 2024-03-10 a las 17 09 48_d1f474f8](https://github.com/Lapituda/actividad7/assets/102392241/d2cb9920-2d11-466f-93fe-face20cc34af)
 
